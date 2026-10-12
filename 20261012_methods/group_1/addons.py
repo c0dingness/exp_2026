@@ -1,7 +1,7 @@
 import random
 
 
-# FIGHT_CLUB_LIDE
+# FIGHT_CLUB_LITE
 
 class Player:
     name: str
