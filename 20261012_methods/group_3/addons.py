@@ -46,6 +46,9 @@ def test():
 
     gs.start()
 
+    print(p1.get_info())
+    print(p2.get_info())
+
 
 if __name__ == '__main__':
     test()
