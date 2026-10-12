@@ -17,13 +17,21 @@ class Player:
     def get_info(self):
         return f'{self.name}, hp:{self.hp}, power:{self.power}'
 
-class GameSession:
-    def start(self):
-        pass
+    def beat(self, other: 'Player'):
+        other.receive_dmg(amount=self.power)
 
+    def receive_dmg(self, amount):
+        self.hp -= amount
+
+
+class GameSession:
     def __init__(self, first: Player, second: Player):
         self.p1 = first
         self.p2 = second
+
+    def start(self):
+        self.p1.beat(other=self.p2)
+        self.p2.beat(other=self.p1)
 
 
 def test():
