@@ -4,7 +4,7 @@ class Banana:
 
     def __init__(self, weight: float):  # метод вызывается при создании объекта
         self.weight = weight
-        print('Banana was created!')
+        print('Pear was created!')
 
 # Описание класса
 class Lemur:
