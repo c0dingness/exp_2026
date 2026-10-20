@@ -1,4 +1,5 @@
 import xxx
+import xxx.fruits
 import xxx.garden
 
 
