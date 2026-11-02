@@ -108,15 +108,16 @@ for n, w in enumerate(words):
 
 print('***')
 
-x = 0 # Как сделать так, чтобы 0 выводился?
+x = 0
 numbers_to_pass = [30, 40]
 while True:
     if x >= 70:
         break  # выход из цикла
 
+    print(x)
     x += 10
 
     if x in numbers_to_pass:
         continue  # переход к следующему шагу итерации
 
-    print(x)
+
