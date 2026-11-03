@@ -1,5 +1,4 @@
 # CRUD
-import time
 
 # Create
 my_list_1 = []
@@ -63,6 +62,7 @@ for j in jobs_list:
     # Тело цикла
     j.do()
 
+
 def select_words(words: list[str],
                  count_of_letters: int
                  ) -> list[str]:
@@ -79,7 +79,6 @@ my_words = ['hi', 'my', 'some', 'night']
 selection = select_words(words=my_words, count_of_letters=2)
 print(selection)
 
-
 for _ in range(3):
     print('koko-check-check')
 
@@ -93,38 +92,18 @@ for w in my_words:
 for i, w in enumerate(my_words):
     print(f'{i}: {w}')
 
-
-
 x = 0
 number_to_pass = 50
 while True:
     if x == number_to_pass:
         x += 10
-        continue # переход на следующий шаг итерации
+        continue  # переход на следующий шаг итерации
 
     print(x)
 
     if x >= 100:
-        break # выход из цикла
+        break  # выход из цикла
 
     # Тело цикла
 
     x += 10
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
