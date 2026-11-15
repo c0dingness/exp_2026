@@ -43,16 +43,16 @@ def process_word(word: str):
             word.islower()
     )
 
-
     conditions = [
-        len(word) >= 5, # T
-        word.isalpha(), # T
-        word.islower(), # T
+        len(word) >= 5,  # T
+        word.isalpha(),  # T
+        word.islower(),  # T
     ]
     condition = any(conditions)
 
     if condition:
         print('bingo!')
+
 
 process_word(word='palma')
 process_word(word='palm')

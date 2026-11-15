@@ -41,6 +41,5 @@ def tests():
     print(list(my_lovely_filter_w_lambda))
 
 
-
 if __name__ == '__main__':
     tests()

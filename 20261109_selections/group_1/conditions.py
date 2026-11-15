@@ -17,7 +17,6 @@ def into_range(a, b, x) -> bool:
     return a <= x <= b
 
 
-
 def calculate(x):
     if not isinstance(x, float):
         return 0
@@ -30,9 +29,9 @@ def calculate(x):
 
 def exp(word: str):
     conditions = [
-        len(word) >= 5, # True
-        word.isalpha(), # True
-        word.islower(), # True
+        len(word) >= 5,  # True
+        word.isalpha(),  # True
+        word.islower(),  # True
     ]
 
     if any(conditions):
@@ -41,10 +40,7 @@ def exp(word: str):
     if all(conditions):
         print(f'{word}: all bingo!')
 
+
 if __name__ == '__main__':
     exp(word='12345')
     exp(word='palma')
-
-
-
-

@@ -62,17 +62,18 @@ def bingo_function(word: str):
 
     # var #2
     conditions = [
-            len(word) >= 5,
-            word.islower(),
-            word.isalpha(),
+        len(word) >= 5,
+        word.islower(),
+        word.isalpha(),
     ]
-    is_word_accepted =any(conditions)
+    is_word_accepted = any(conditions)
 
     # ...
     if is_word_accepted:
         print('bingo!')
 
     return
+
 
 print('***')
 bingo_function(word='lamp')

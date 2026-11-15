@@ -27,10 +27,18 @@ def select_low_ram_servers(
     return new_lits
 
 
+def fine_list_output(servers: list[Server], header: str):
+    print(f'=== {header}')
+    for s in servers:
+        print(f'{id(s)}: name: {s.role}: {s.cpu}/{s.ram}/{s.disk}')
+
+
 selected = select_low_ram_servers(servers=servers_list)
+fine_list_output(selected, header='1st')
 
 # 2 Однострочники
 selected = [s for s in servers_list if s.ram <= 8]
+fine_list_output(selected, header='2nd')
 
 
 # 3 Фильтр
