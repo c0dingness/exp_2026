@@ -5,17 +5,17 @@ class Worker:
     def do_do(self):
         print(f'{id(self)} Doing job')
 
-        chance_number = random.randint(1,10)
+        chance_number = random.randint(1, 10)
         if chance_number >= 5:
             raise RuntimeError(f'{id(self)} Cannot do work')
 
         print(f'{id(self)} Job is done!')
 
+
 class Manager:
     def __init__(self, group_workers: list[Worker]):
         if len(group_workers) < 1:
             raise ValueError('Must be at least one worker')
-
 
         self.group_workers = group_workers
 
@@ -29,7 +29,6 @@ class Manager:
                 except RuntimeError as e:
                     ex = e
                     self.repair()
-
 
             if ex is not None:
                 raise ex
@@ -62,12 +61,6 @@ def test():
 
     gm.start_work()
 
+
 if __name__ == '__main__':
     test()
-
-
-
-
-
-
-

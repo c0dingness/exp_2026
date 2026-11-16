@@ -1,5 +1,3 @@
-
-
 s = ' Bla-bla '
 
 print(s)
@@ -15,5 +13,3 @@ print(my_list_as_str)
 any_string = 'text bla-bla; text la la'
 s1 = any_string.split('; ')
 print(s1)
-
-
